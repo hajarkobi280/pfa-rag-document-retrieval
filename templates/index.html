@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAG Administratif — Projet PFA</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+<button id="sidebarBackdrop" class="backdrop" aria-label="Fermer les conversations" hidden></button>
+<aside class="sidebar" id="sidebar" aria-label="Conversations">
+  <div class="sidebar-header"><div class="logo-container"><div class="logo-icon" data-icon="temple"></div><div class="logo-text"><h2>RAG Administratif</h2><span>Projet PFA</span></div><button id="closeSidebar" class="icon-button mobile" aria-label="Fermer le menu" data-icon="close"></button></div></div>
+  <div class="sidebar-tools"><button id="newChatBtn" class="new-chat-btn"><span data-icon="plus"></span>Nouvelle conversation</button><label class="sr-only" for="conversationSearch">Rechercher une conversation</label><input id="conversationSearch" type="search" placeholder="Rechercher une conversation…"></div>
+  <nav id="conversationList" aria-label="Historique des conversations"></nav>
+  <div class="sidebar-footer">Vos conversations restent sur cet ordinateur.</div>
+</aside>
+<main class="main-content">
+  <header class="topbar"><button id="openSidebar" class="icon-button mobile" aria-label="Ouvrir les conversations" aria-expanded="false" aria-controls="sidebar" data-icon="menu"></button><div class="topbar-info"><h1>Assistant IA des démarches administratives</h1><p>PDF → Base Service-Public → Internet si nécessaire</p></div><div class="system-status"><span class="status-chip" id="ollamaStatus">Ollama : vérification…</span><span class="status-chip" id="embeddingStatus">E5 : vérification…</span><span class="status-chip" id="rerankerStatus">Reranker : vérification…</span></div></header>
+  <div class="chat-container" id="chatArea" role="log" aria-label="Messages de la conversation" aria-live="polite" tabindex="0"></div>
+  <footer class="input-area"><div id="attachments" class="attachments" aria-live="polite"></div><form id="chatForm" class="input-form"><button type="button" id="attachBtn" class="icon-button" aria-label="Joindre des PDF" title="Joindre des PDF" data-icon="plus"></button><input type="file" id="pdfFileInput" accept=".pdf" multiple hidden><label for="questionInput" class="sr-only">Votre question</label><textarea id="questionInput" rows="1" maxlength="2000" placeholder="Posez votre question ou joignez un PDF…" required></textarea><button id="sendBtn" class="send-btn" type="submit"><span>Envoyer</span><span data-icon="send"></span></button></form><p class="composer-hint">Entrée pour envoyer · Maj + Entrée pour une nouvelle ligne</p></footer>
+</main>
+</body></html>

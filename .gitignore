@@ -1,0 +1,21 @@
+__pycache__/
+.pytest_cache/
+.chart-data-*/
+.runtime/
+tmp/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.env.example
+models/
+data/
+data/service_public_clean.jsonl
+data/index_service_public/
+data/index_lexical/
+data/history/
+data/internet_cache.json
+Guide_preparation_jury_Hajar_Kobi.docx git add . git status --short
+Guide_preparation_jury_Hajar_Kobi.docx 
+node_modules/

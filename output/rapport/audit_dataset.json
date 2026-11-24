@@ -1,0 +1,224 @@
+{
+  "service_public.jsonl": {
+    "bytes": 168019319,
+    "rows": 35850,
+    "documents": 3569,
+    "unique_chunk_ids": 35850,
+    "duplicate_chunk_ids": 0,
+    "columns": [
+      "chunk_id",
+      "doc_id",
+      "chunk_index",
+      "chunk_xxh64",
+      "audience",
+      "theme",
+      "title",
+      "surtitle",
+      "source",
+      "introduction",
+      "url",
+      "related_questions",
+      "web_services",
+      "context",
+      "text",
+      "chunk_text"
+    ],
+    "column_count": 16,
+    "types": {
+      "chunk_id": {
+        "str": 35850
+      },
+      "doc_id": {
+        "str": 35850
+      },
+      "chunk_index": {
+        "int": 35850
+      },
+      "chunk_xxh64": {
+        "str": 35850
+      },
+      "audience": {
+        "str": 35850
+      },
+      "theme": {
+        "str": 35850
+      },
+      "title": {
+        "str": 35850
+      },
+      "surtitle": {
+        "str": 35850
+      },
+      "source": {
+        "str": 35850
+      },
+      "introduction": {
+        "str": 35850
+      },
+      "url": {
+        "str": 35850
+      },
+      "related_questions": {
+        "str": 35850
+      },
+      "web_services": {
+        "str": 35850
+      },
+      "context": {
+        "list": 35850
+      },
+      "text": {
+        "str": 35850
+      },
+      "chunk_text": {
+        "str": 35850
+      }
+    },
+    "empty_values": {
+      "context": 3823,
+      "theme": 364
+    },
+    "missing_keys": {
+      "chunk_id": 0,
+      "doc_id": 0,
+      "chunk_index": 0,
+      "chunk_xxh64": 0,
+      "audience": 0,
+      "theme": 0,
+      "title": 0,
+      "surtitle": 0,
+      "source": 0,
+      "introduction": 0,
+      "url": 0,
+      "related_questions": 0,
+      "web_services": 0,
+      "context": 0,
+      "text": 0,
+      "chunk_text": 0
+    },
+    "audiences": {
+      "Particuliers": 26208,
+      "Professionnels": 8421,
+      "Particuliers, Professionnels": 1221
+    },
+    "text_length_characters": {
+      "min": 118,
+      "median": 1096.0,
+      "mean": 1435.0,
+      "max": 5012
+    },
+    "sha256": "dae335f62243ec5cc205cd25b6bb76f37859b016079c2020873e811c794dc9de"
+  },
+  "service_public_clean.jsonl": {
+    "bytes": 163847890,
+    "rows": 35850,
+    "documents": 3569,
+    "unique_chunk_ids": 35850,
+    "duplicate_chunk_ids": 0,
+    "columns": [
+      "chunk_id",
+      "doc_id",
+      "chunk_index",
+      "chunk_xxh64",
+      "audience",
+      "theme",
+      "title",
+      "surtitle",
+      "source",
+      "introduction",
+      "url",
+      "related_questions",
+      "web_services",
+      "context",
+      "text",
+      "chunk_text"
+    ],
+    "column_count": 16,
+    "types": {
+      "chunk_id": {
+        "str": 35850
+      },
+      "doc_id": {
+        "str": 35850
+      },
+      "chunk_index": {
+        "int": 35850
+      },
+      "chunk_xxh64": {
+        "str": 35850
+      },
+      "audience": {
+        "str": 35850
+      },
+      "theme": {
+        "str": 35850
+      },
+      "title": {
+        "str": 35850
+      },
+      "surtitle": {
+        "str": 35850
+      },
+      "source": {
+        "str": 35850
+      },
+      "introduction": {
+        "str": 35850
+      },
+      "url": {
+        "str": 35850
+      },
+      "related_questions": {
+        "list": 35850
+      },
+      "web_services": {
+        "list": 35850
+      },
+      "context": {
+        "list": 35850
+      },
+      "text": {
+        "str": 35850
+      },
+      "chunk_text": {
+        "str": 35850
+      }
+    },
+    "empty_values": {
+      "context": 3823,
+      "related_questions": 12663,
+      "web_services": 10666,
+      "theme": 364
+    },
+    "missing_keys": {
+      "chunk_id": 0,
+      "doc_id": 0,
+      "chunk_index": 0,
+      "chunk_xxh64": 0,
+      "audience": 0,
+      "theme": 0,
+      "title": 0,
+      "surtitle": 0,
+      "source": 0,
+      "introduction": 0,
+      "url": 0,
+      "related_questions": 0,
+      "web_services": 0,
+      "context": 0,
+      "text": 0,
+      "chunk_text": 0
+    },
+    "audiences": {
+      "Particuliers": 26208,
+      "Professionnels": 8421,
+      "Particuliers, Professionnels": 1221
+    },
+    "text_length_characters": {
+      "min": 118,
+      "median": 1096.0,
+      "mean": 1433.8,
+      "max": 5002
+    },
+    "sha256": "d999e19bf2dde8e09b59031229f2f3ba94bbb94875816e82ce8a0e9f3f7a1313"
+  }
+}
